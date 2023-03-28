@@ -1,0 +1,8 @@
+require("shailesh.plugins-setup")
+require("shailesh.core.options")
+require("shailesh.core.keymaps")
+require("shailesh.core.colorsheme")
+require("shailesh.plugins.comment")
+require("shailesh.plugins.nvim-tree")
+require("shailesh.plugins.lualine")
+require("shailesh.plugins.colorizer")
