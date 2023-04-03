@@ -1,46 +1,25 @@
-# Nordic-darker color palette
-#2e3440	user
-#3b4252	dir
-#434c5e	git
-#4c566a	version
-#5e81ac	doc (from dracula color palette)
-#6272a4	time (from dracula color palette)
-
-# some extra symbols
-# 
-# 
+#
 #        |            _)  |              |     
 #   __|  __ \    _` |  |  |   _ \   __|  __ \  
 # \__ \  | | |  (   |  |  |   __/ \__ \  | | | 
 # ____/ _| |_| \__._| _| _| \___| ____/ _| |_|
 # ---------------------------------------------
 format = """
-[▒▓](#2e3440)\
+[▓](#2e3440)\
 [ ](fg:#DCDCDC bg:#3b4252)\
 $directory\
-[](fg:#3b4252 bg:#434c5e)\
+[](fg:#3b4252)\
+$character
+"""
+
+right_format = """
+$cmd_duration
+[](fg:#434c5e)\
+$conda\
 $git_branch\
 $git_status\
-[](fg:#434c5e bg:#4c566a)\
-$c\
-$python\
-$elixir\
-$elm\
-$golang\
-$haskell\
-$java\
-$julia\
-$nodejs\
-$nim\
-$rust\
-$scala\
-[](fg:#4c566a bg:#5e81ac)\
-$docker_context\
-[](fg:#5e81ac bg:#6272a4)\
+[](fg:#6272a4 bg:#434c5e)\
 $time\
-[](fg:#6272a4)\
-$cmd_duration\
-$character\
 """
 
 # add_newline = false
@@ -150,6 +129,16 @@ disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#6272a4"
 format = '[  $time ]($style)'
+
+[battery]
+full_symbol = "󰁹"
+charging_symbol = "󰂄"
+discharging_symbol = "󰂃"
+
+
+[[battery.display]]
+threshold = 100
+style = 'white'
 	
 [character]
 success_symbol = '[ ➜](#6272a4)'
