@@ -44,6 +44,7 @@ format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
+
 [c]
 symbol = " "
 style = "bg:#4c566a"
