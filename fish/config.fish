@@ -12,6 +12,7 @@ alias gc='git clone'
 alias fishconfig='nvim ~/.config/fish/config.fish'
 alias nvimconfig='nvim ~/.config/nvim/init.vim'
 alias kittyconfig='nvim ~/.config/kitty/kitty.conf'
+alias qtconfig='nvim ~/.config/qtile/config.py'
 
 # Source Configuration Files
 alias srcfish='source ~/.config/fish/config.fish'
