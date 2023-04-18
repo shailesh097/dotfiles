@@ -1,15 +1,21 @@
-require("shailesh.plugins-setup")
-require("shailesh.core.options")
-require("shailesh.core.keymaps")
-require("shailesh.core.colorsheme")
-require("shailesh.plugins.comment")
-require("shailesh.plugins.nvim-tree")
-require("shailesh.plugins.lualine")
-require("shailesh.plugins.colorizer")
-require("shailesh.plugins.telescope")
-require("shailesh.plugins.nvim-cmp")
-require("shailesh.plugins.lsp.mason")
-require("shailesh.plugins.lsp.lspsaga")
-require("shailesh.plugins.lsp.lspconfig")
-require("shailesh.plugins.autopairs") 
-require("shailesh.plugins.treesitter")
+require "core"
+
+local custom_init_path = vim.api.nvim_get_runtime_file("lua/custom/init.lua", false)[1]
+
+if custom_init_path then
+  dofile(custom_init_path)
+end
+
+require("core.utils").load_mappings()
+
+local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
+
+-- bootstrap lazy.nvim!
+if not vim.loop.fs_stat(lazypath) then
+  require("core.bootstrap").gen_chadrc_template()
+  require("core.bootstrap").lazy(lazypath)
+end
+
+dofile(vim.g.base46_cache .. "defaults")
+vim.opt.rtp:prepend(lazypath)
+require "plugins"
