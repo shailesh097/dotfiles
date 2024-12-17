@@ -70,8 +70,8 @@ threshold = 100
 style = 'white'
 	
 [character]
-success_symbol = '[ ➜](#6272a4)'
-error_symbol = '[ ➜](bold red)'
+success_symbol = '[ ➜ ](#6272a4)'
+error_symbol = '[ ➜ ](bold red)'
 #style = "bg:#6272a4"
 
 [cmd_duration]
