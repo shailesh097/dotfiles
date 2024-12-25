@@ -55,4 +55,4 @@ alias ca='conda activate'
 alias cde='conda deactivate'
 
 # Starship prompt
-starship init fish | source
+# starship init fish | source
