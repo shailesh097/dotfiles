@@ -1,0 +1,19 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"ignored_packages": [
+	],
+
+	"font_face": "DM Mono Medium",
+	"font_size": 11,
+	"color_scheme": "Mariana.sublime-color-scheme",
+	"theme": "auto",
+	"word_wrap": true,
+	"highlight_line": true,
+	"caret_style": "solid",
+	"save_on_focus_lost": true,
+	"hardware_acceleration": "opengl",
+	"index_files": true,
+	"overlay_scroll_bars": "enabled",
+
+}
