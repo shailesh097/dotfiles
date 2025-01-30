@@ -10,7 +10,7 @@ alias gc='git clone'
 
 # Configuration files
 alias fishconfig='nvim ~/.config/fish/config.fish'
-alias nvimconfig='nvim ~/.config/nvim/init.vim'
+alias nvimconfig='nvim ~/.config/nvim'
 alias kittyconfig='nvim ~/.config/kitty/kitty.conf'
 alias qtconfig='nvim ~/.config/qtile/config.py'
 
@@ -22,6 +22,12 @@ alias install='sudo dnf install'
 alias update='sudo dnf update'
 alias upgrade='sudo dnf upgrade'
 alias clean='sudo dnf autoremove'
+
+# systemctl aliases
+alias status-ctl='sudo systemctl status'
+alias stop-ctl='sudo systemctl stop'
+alias disable-ctl='sudo systemctl disable'
+alias enable-ctl='sudo systemctl enable'
 
 # nvim
 alias nv='nvim'
@@ -55,4 +61,4 @@ alias ca='conda activate'
 alias cde='conda deactivate'
 
 # Starship prompt
-# starship init fish | source
+starship init fish | source
