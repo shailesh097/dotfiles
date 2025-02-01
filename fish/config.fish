@@ -28,6 +28,7 @@ alias status-ctl='sudo systemctl status'
 alias stop-ctl='sudo systemctl stop'
 alias disable-ctl='sudo systemctl disable'
 alias enable-ctl='sudo systemctl enable'
+alias start-ctl='sudo systemctl start'
 
 # nvim
 alias nv='nvim'
