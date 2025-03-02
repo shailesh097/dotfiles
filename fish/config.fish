@@ -29,12 +29,14 @@ alias stop-ctl='sudo systemctl stop'
 alias disable-ctl='sudo systemctl disable'
 alias enable-ctl='sudo systemctl enable'
 alias start-ctl='sudo systemctl start'
+alias restart-ctl='sudo systemctl restart'
 # user-level systemctl aliases
 alias status-uctl='systemctl --user status'
 alias stop-uctl='systemctl --user stop'
 alias disable-uctl='systemctl --user disable'
 alias enable-uctl='systemctl --user enable'
 alias start-uctl='systemctl --user start'
+alias restart-uctl='systemctl --user restart'
 
 # nvim
 alias nv='nvim'
