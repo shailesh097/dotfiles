@@ -5,7 +5,8 @@ set fish_greeting # Aliases
 # Run Python
 alias rp='python3 -u'
 
-# git clone
+# git
+alias lg='lazygit'
 alias gc='git clone'
 
 # Configuration files
