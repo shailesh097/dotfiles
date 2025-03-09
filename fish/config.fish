@@ -8,6 +8,10 @@ alias rp='python3 -u'
 # git
 alias lg='lazygit'
 alias gc='git clone'
+alias gp='git pull'
+alias gP='git push'
+alias gb='git branch'
+alias gch='git checkout'
 
 # Configuration files
 alias fishconfig='nvim ~/.config/fish/config.fish'
@@ -72,3 +76,4 @@ alias cde='conda deactivate'
 
 # Starship prompt
 starship init fish | source
+
