@@ -12,6 +12,7 @@ alias gp='git pull'
 alias gP='git push'
 alias gb='git branch'
 alias gch='git checkout'
+alias gcm='git commit -m'
 
 # Configuration files
 alias fishconfig='nvim ~/.config/fish/config.fish'
