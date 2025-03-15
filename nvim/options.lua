@@ -16,7 +16,6 @@ o.completeopt = 'menuone,noinsert,noselect'  -- Autocomplete options
 o.number = true           -- Show line number
 o.showmatch = true        -- Highlight matching parenthesis
 o.foldmethod = 'marker'   -- Enable folding (default 'foldmarker')
-o.colorcolumn = '80'      -- Line lenght marker at 80 columns
 o.splitright = true       -- Vertical split to the right
 o.splitbelow = true       -- Horizontal split to the bottom
 o.ignorecase = true       -- Ignore case letters when search
@@ -41,3 +40,5 @@ o.history = 100           -- Remember N lines in history
 o.lazyredraw = true       -- Faster scrolling
 o.synmaxcol = 240         -- Max column for syntax highlight
 o.updatetime = 250        -- ms to wait for trigger an event
+
+
