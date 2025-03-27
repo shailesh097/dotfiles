@@ -3,11 +3,12 @@ require "nvchad.options"
 -- add yours here!
 
 local o = vim.o
--- local g = vim.g 
+
 o.cursorlineopt ='both' -- to enable cursorline!
-o.mouse = 'a'
-o.clipboard = 'unnamedplus'
-o.swapfile = false
+
+o.mouse = 'a'                       -- Enable mouse support
+o.clipboard = 'unnamedplus'         -- Copy/paste to system clipboard
+o.swapfile = false                  -- Don't use swapfile
 o.completeopt = 'menuone,noinsert,noselect'  -- Autocomplete options
 
 -----------------------------------------------------------
@@ -16,6 +17,7 @@ o.completeopt = 'menuone,noinsert,noselect'  -- Autocomplete options
 o.number = true           -- Show line number
 o.showmatch = true        -- Highlight matching parenthesis
 o.foldmethod = 'marker'   -- Enable folding (default 'foldmarker')
+o.colorcolumn = '80'      -- Line lenght marker at 80 columns
 o.splitright = true       -- Vertical split to the right
 o.splitbelow = true       -- Horizontal split to the bottom
 o.ignorecase = true       -- Ignore case letters when search
@@ -27,7 +29,7 @@ o.laststatus=3            -- Set global statusline
 -----------------------------------------------------------
 -- Tabs, indent
 -----------------------------------------------------------
-o.expandtab = true        -- Use spaces instead of tabs
+o.expandtab = false        -- Use spaces instead of tabs
 o.shiftwidth = 4          -- Shift 4 spaces when tab
 o.tabstop = 4             -- 1 tab == 4 spaces
 o.smartindent = true      -- Autoindent new lines
@@ -40,5 +42,3 @@ o.history = 100           -- Remember N lines in history
 o.lazyredraw = true       -- Faster scrolling
 o.synmaxcol = 240         -- Max column for syntax highlight
 o.updatetime = 250        -- ms to wait for trigger an event
-
-
