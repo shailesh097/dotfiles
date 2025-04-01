@@ -77,6 +77,9 @@ end
 alias ca='conda activate'
 alias cde='conda deactivate'
 
+# zoxide initialization
+zoxide init fish | source
+
 # Starship prompt
 starship init fish | source
 
