@@ -7,6 +7,8 @@ local options = {
 		"gosum",
 		"gowork",
 		"shfmt",
+		"html",
+		"css",
 	},
 
 	highlight = {

@@ -17,6 +17,10 @@ local options = {
             args = { "-" },
             stdin = true,
         },
+		prettier = {
+			args = { "--single-quote", "--print-width", "80" },
+			stdin = true,
+		},
     },
 }
 

@@ -25,6 +25,7 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
+
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
@@ -36,9 +37,23 @@ vim.schedule(function()
   require "mappings"
 end)
 
+
+--------------------------------------------------------------
+--                My custom Init settings					-- 
+--------------------------------------------------------------
+
+-- autoformat on save for go files
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*.go",
 	callback = function ()
 		vim.lsp.buf.format()
 	end,
+})
+
+-- Autoformat HTML/CSS on save
+vim.api.nvim_create_autocmd("BufWritePre", {
+    pattern = { "*.html", "*.css" },
+    callback = function ()
+        vim.lsp.buf.format()
+    end,
 })
