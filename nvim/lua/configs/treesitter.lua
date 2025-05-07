@@ -9,6 +9,7 @@ local options = {
 		"shfmt",
 		"html",
 		"css",
+		"python",
 	},
 
 	highlight = {
