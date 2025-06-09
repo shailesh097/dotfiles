@@ -26,21 +26,21 @@ lspconfig.gopls.setup({
 	},
 })
 
-lspconfig.pylsp.setup({
-	on_attach = nvlsp.on_attach,
-	on_init = nvlsp.on_init,
-	capabilities = nvlsp.capabilities,
-	settings = {
-		pylsp = {
-			plugins = {
-				-- pycodestyle = { enabled = false },
-				-- mccabe = { enabled = false },
-				-- pyflakes = { enabled = false },
-				isort = { enabled = true },
-				black = { enabled = true },
-				-- ruff = { enabled = true },
-			},
-		},
-	},
-})
+-- lspconfig.pylsp.setup({
+-- 	on_attach = nvlsp.on_attach,
+-- 	on_init = nvlsp.on_init,
+-- 	capabilities = nvlsp.capabilities,
+-- 	settings = {
+-- 		pylsp = {
+-- 			plugins = {
+-- 				-- pycodestyle = { enabled = false },
+-- 				-- mccabe = { enabled = false },
+-- 				-- pyflakes = { enabled = false },
+-- 				isort = { enabled = true },
+-- 				black = { enabled = true },
+-- 				-- ruff = { enabled = true },
+-- 			},
+-- 		},
+-- 	},
+-- })
 

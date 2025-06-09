@@ -14,4 +14,4 @@ map("n", "<leader>gt", ":GoTest<CR>", opts) -- Run Go tests
 
 -- map("n", "<C-S>", ":!~/go/bin/gofumpt -w %<CR>", { noremap = true, silent = true })
 
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+-- -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

@@ -10,6 +10,7 @@ local options = {
 		"html",
 		"css",
 		"python",
+		"csv",
 	},
 
 	highlight = {
@@ -20,4 +21,4 @@ local options = {
 	indent = { enabled = true }
 }
 
-require("nvim-treesitter.configs").setup(options)
+require("nvim-treesitter.configs")

@@ -58,6 +58,7 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     end,
 })
 
+-- Autoformat python files on save
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*.py",
 	callback = function ()
