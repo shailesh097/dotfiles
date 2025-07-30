@@ -78,3 +78,8 @@ error_symbol = '[ ➜ ](bold red)'
 min_time = 500
 format = ' [$duration](#6272a4)'
 
+[conda]
+ignore_base = false
+style = "bg:#434c5e"
+format = '[  $environment ]($style)'
+

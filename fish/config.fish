@@ -2,10 +2,10 @@ set fish_greeting # Aliases
 
 # fm6000 -c "cyan" -w -nd -o "Fedora 37" -d "Gnome" -m 4 -g 9
 
-# Run Python
-alias rp='python3 -u'
+# prompt to delete file
+alias rm='rm -i'
 
-# git
+# git aliases
 alias lg='lazygit'
 alias ga='git add'
 alias gc='git clone'
@@ -60,22 +60,34 @@ export EXA_COLORS="di=38;5;111:fi=38;5;251:ex=38;5;40"
 
 # Fix typos
 alias cd..='cd ..'
+alias cd...='cd ../..'
 alias pdw='pwd'
 alias udpate='sudo dnf update'
 alias updte='sudo dnf update'
 alias updte='sudo dnf update'
 alias updqte='suda dnf update'
+alias updtae='sudo dnf update'
+
+
+# Run Python
+alias rp='python3 -u'
+
+# Conda aliases
+alias ca='conda activate'
+alias cde='conda deactivate'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-if test -f /home/shailesh/miniconda3/bin/conda
-    eval /home/shailesh/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+if test -f /home/pokhares/miniconda3/bin/conda
+    eval /home/pokhares/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+else
+    if test -f "/home/pokhares/miniconda3/etc/fish/conf.d/conda.fish"
+        . "/home/pokhares/miniconda3/etc/fish/conf.d/conda.fish"
+    else
+        set -x PATH "/home/pokhares/miniconda3/bin" $PATH
+    end
 end
 # <<< conda initialize <<<
-
-# Conda
-alias ca='conda activate'
-alias cde='conda deactivate'
 
 # zoxide initialization
 zoxide init fish | source
@@ -83,3 +95,5 @@ zoxide init fish | source
 # Starship prompt
 starship init fish | source
 
+# Add path for go
+set -Ux PATH $HOME/go/bin $PATH
