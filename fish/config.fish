@@ -49,14 +49,14 @@ alias restart-uctl='systemctl --user restart'
 # nvim
 alias nv='nvim'
 
-# better ls(exa)
-alias ls='exa --classify --icons -s=type'
-alias la='exa --all --classify --icons -s=type'
-alias ll='exa --all --classify --long --header --icons -s=type'
-alias tree='exa --tree --icons --classify'
-alias treel='exa --tree --icons --classify --long --binary'
-# set exa colors
-export EXA_COLORS="di=38;5;111:fi=38;5;251:ex=38;5;40"
+# better ls(eza)
+alias ls='eza --classify --icons -s=type'
+alias la='eza --all --classify --icons -s=type'
+alias ll='eza --all --classify --long --header --icons -s=type'
+alias tree='eza --tree --icons --classify'
+alias treel='eza --tree --icons --classify --long --binary'
+# set eza colors
+export eza_COLORS="di=38;5;111:fi=38;5;251:ex=38;5;40"
 
 # Fix typos
 alias cd..='cd ..'
