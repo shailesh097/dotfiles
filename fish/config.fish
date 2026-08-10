@@ -62,11 +62,11 @@ export eza_COLORS="di=38;5;111:fi=38;5;251:ex=38;5;40"
 alias cd..='cd ..'
 alias cd...='cd ../..'
 alias pdw='pwd'
-alias udpate='sudo dnf update'
-alias updte='sudo dnf update'
-alias updte='sudo dnf update'
-alias updqte='suda dnf update'
-alias updtae='sudo dnf update'
+alias udpate='sudo dnf5 upgrade && flatpak update --user && sudo flatpak update --system'
+alias updte='sudo dnf5 upgrade && flatpak update --user && sudo flatpak update --system'
+alias updte='sudo dnf5 upgrade && flatpak update --user && sudo flatpak update --system'
+alias updqte='sudo dnf5 upgrade && flatpak update --user && sudo flatpak update --system'
+alias updtae='sudo dnf5 upgrade && flatpak update --user && sudo flatpak update --system'
 
 
 # Run Python
@@ -76,18 +76,18 @@ alias rp='python3 -u'
 alias ca='conda activate'
 alias cde='conda deactivate'
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-if test -f /home/pokhares/miniconda3/bin/conda
-    eval /home/pokhares/miniconda3/bin/conda "shell.fish" "hook" $argv | source
-else
-    if test -f "/home/pokhares/miniconda3/etc/fish/conf.d/conda.fish"
-        . "/home/pokhares/miniconda3/etc/fish/conf.d/conda.fish"
-    else
-        set -x PATH "/home/pokhares/miniconda3/bin" $PATH
-    end
-end
-# <<< conda initialize <<<
+# # >>> conda initialize >>>
+# # !! Contents within this block are managed by 'conda init' !!
+# if test -f /home/pokhares/miniconda3/bin/conda
+#     eval /home/pokhares/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+# else
+#     if test -f "/home/pokhares/miniconda3/etc/fish/conf.d/conda.fish"
+#         . "/home/pokhares/miniconda3/etc/fish/conf.d/conda.fish"
+#     else
+#         set -x PATH "/home/pokhares/miniconda3/bin" $PATH
+#     end
+# end
+# # <<< conda initialize <<<
 
 # zoxide initialization
 zoxide init fish | source

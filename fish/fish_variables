@@ -1,5 +1,5 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export --path PATH:/home/pokhares/go/bin\x1e/home/pokhares/miniconda3/bin\x1e/home/pokhares/go/bin\x1e/home/pokhares/\x2elocal/bin\x1e/home/shailesh/\x2econfig/rofi/scripts\x1e/home/shailesh/\x2ecargo/bin\x1e/home/pokhares/miniconda3/bin\x1e/usr/local/bin\x1e/usr/bin
+SETUVAR --export --path PATH:/home/pokhares/go/bin\x1e/home/pokhares/go/bin\x1e/home/pokhares/\x2elocal/bin\x1e/home/shailesh/\x2econfig/rofi/scripts\x1e/home/shailesh/\x2ecargo/bin\x1e/usr/local/bin\x1e/usr/bin
 SETUVAR __fish_initialized:4300
 SETUVAR fish_user_paths:/home/pokhares/go/bin\x1e/home/pokhares/\x2elocal/bin\x1e/home/shailesh/\x2econfig/rofi/scripts\x1e/home/shailesh/\x2ecargo/bin
