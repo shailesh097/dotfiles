@@ -76,19 +76,6 @@ alias rp='python3 -u'
 alias ca='conda activate'
 alias cde='conda deactivate'
 
-# # >>> conda initialize >>>
-# # !! Contents within this block are managed by 'conda init' !!
-# if test -f /home/pokhares/miniconda3/bin/conda
-#     eval /home/pokhares/miniconda3/bin/conda "shell.fish" "hook" $argv | source
-# else
-#     if test -f "/home/pokhares/miniconda3/etc/fish/conf.d/conda.fish"
-#         . "/home/pokhares/miniconda3/etc/fish/conf.d/conda.fish"
-#     else
-#         set -x PATH "/home/pokhares/miniconda3/bin" $PATH
-#     end
-# end
-# # <<< conda initialize <<<
-
 # zoxide initialization
 zoxide init fish | source
 
@@ -97,3 +84,17 @@ starship init fish | source
 
 # Add path for go
 set -Ux PATH $HOME/go/bin $PATH
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /home/pokhares/miniconda3/bin/conda
+    eval /home/pokhares/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+else
+    if test -f "/home/pokhares/miniconda3/etc/fish/conf.d/conda.fish"
+        . "/home/pokhares/miniconda3/etc/fish/conf.d/conda.fish"
+    else
+        set -x PATH "/home/pokhares/miniconda3/bin" $PATH
+    end
+end
+# <<< conda initialize <<<
+
